@@ -15,7 +15,7 @@ soltools is not yet on npm. Clone both repos as siblings and build the SDK
 first, since soltools depends on it via `file:../ZXY-Protocol-SDK`:
 
 ```bash
-git clone https://github.com/ZXY-PROTOCOL/ZXY-Protocol-SDK.git
+git clone https://github.com/hunts666/ZXY-Protocol-SDK.git
 cd ZXY-Protocol-SDK && npm install && npm run build && cd ..
 
 git clone https://github.com/hunts666/soltools.git
@@ -27,6 +27,11 @@ npm link                # optional: makes `soltools` available globally
 
 The two directories must sit side by side. soltools resolves
 `@zxy-protocol/sdk` to `../ZXY-Protocol-SDK/dist/` via the file: protocol.
+
+> The SDK is a fork of [`ZXY-PROTOCOL/ZXY-Protocol-SDK`](https://github.com/ZXY-PROTOCOL/ZXY-Protocol-SDK)
+> with TypeScript build fixes applied so `npm run build` succeeds under
+> strict mode. Use the fork above; the upstream repo will not build without
+> patches.
 
 ### Configure
 
