@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+import { loadEnv } from "./env";
+loadEnv();
+
 import { Command } from "commander";
 import { registerScanCommand } from "./commands/scan";
 import { registerApysCommand } from "./commands/apys";
